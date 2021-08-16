@@ -39,6 +39,7 @@ public class Calculator {
             if (annualSalary <= rate.getMax_income()) {
                 incomeTax = Math.round((rate.getPlus()
                         + rate.getRate() * ((float) annualSalary - rate.getMin_income()) + 1) / 12);
+                break;
             }
         }
         return incomeTax;
