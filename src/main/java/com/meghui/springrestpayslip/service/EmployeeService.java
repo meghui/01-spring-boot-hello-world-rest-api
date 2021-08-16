@@ -1,4 +1,4 @@
-package com.meghui.springrestpayslip.utils;
+package com.meghui.springrestpayslip.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * @author Meggie Xuan Hui
  * @since 3/8/21
  */
-public class Calculator {
+public class EmployeeService {
 
     public int calGrossIncome (int annualSalary) {
         return Math.round(((float)annualSalary) / 12);
